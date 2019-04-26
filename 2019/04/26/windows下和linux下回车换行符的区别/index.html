@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>git学习笔记 | 大哥，里边请！</title>
+  <title>windows下和linux下回车换行符的区别 | 大哥，里边请！</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="初始化本地库进入项目文件夹使用git init命令初始化本地库，会在该文件夹生成隐藏子文件夹.git,该文件夹不要删除也不要随意修改。  设置签名项目级别/仓库级别：仅在当前项目本地库有效使用`git config user.name xxx` 使用`git config user.email xxx@xxx.com` 系统用户级别：登录当前操作系统的用户范围使用`git config --glo">
+  <meta name="description" content="在Linux下和Windows下新建一个文本文件，注意只是新建，并不向文件中写入数据，此时两个文件是一样的。此时的文件(不管是何处新建的)放在Windows下和Linux下都是一样的。 但是一旦修改则不一样。在Linux下修改并保存，则换行是 \n ，在Windows下修改并保存，则换行是 \r \n 。 并且，一旦修改并保存，则该文件的换行是 \n 还是 \r \n 都是不会变了，除非人为的修改">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git学习笔记">
-<meta property="og:url" content="http://yoursite.com/2019/03/11/git学习笔记/index.html">
+<meta property="og:title" content="windows下和linux下回车换行符的区别">
+<meta property="og:url" content="http://yoursite.com/2019/04/26/windows下和linux下回车换行符的区别/index.html">
 <meta property="og:site_name" content="大哥，里边请！">
-<meta property="og:description" content="初始化本地库进入项目文件夹使用git init命令初始化本地库，会在该文件夹生成隐藏子文件夹.git,该文件夹不要删除也不要随意修改。  设置签名项目级别/仓库级别：仅在当前项目本地库有效使用`git config user.name xxx` 使用`git config user.email xxx@xxx.com` 系统用户级别：登录当前操作系统的用户范围使用`git config --glo">
+<meta property="og:description" content="在Linux下和Windows下新建一个文本文件，注意只是新建，并不向文件中写入数据，此时两个文件是一样的。此时的文件(不管是何处新建的)放在Windows下和Linux下都是一样的。 但是一旦修改则不一样。在Linux下修改并保存，则换行是 \n ，在Windows下修改并保存，则换行是 \r \n 。 并且，一旦修改并保存，则该文件的换行是 \n 还是 \r \n 都是不会变了，除非人为的修改">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-11T11:18:59.346Z">
+<meta property="og:updated_time" content="2019-04-26T12:06:33.765Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git学习笔记">
-<meta name="twitter:description" content="初始化本地库进入项目文件夹使用git init命令初始化本地库，会在该文件夹生成隐藏子文件夹.git,该文件夹不要删除也不要随意修改。  设置签名项目级别/仓库级别：仅在当前项目本地库有效使用`git config user.name xxx` 使用`git config user.email xxx@xxx.com` 系统用户级别：登录当前操作系统的用户范围使用`git config --glo">
+<meta name="twitter:title" content="windows下和linux下回车换行符的区别">
+<meta name="twitter:description" content="在Linux下和Windows下新建一个文本文件，注意只是新建，并不向文件中写入数据，此时两个文件是一样的。此时的文件(不管是何处新建的)放在Windows下和Linux下都是一样的。 但是一旦修改则不一样。在Linux下修改并保存，则换行是 \n ，在Windows下修改并保存，则换行是 \r \n 。 并且，一旦修改并保存，则该文件的换行是 \n 还是 \r \n 都是不会变了，除非人为的修改">
   
     <link rel="alternative" href="/atom.xml" title="大哥，里边请！" type="application/atom+xml">
   
@@ -154,59 +154,30 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-git学习笔记" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-windows下和linux下回车换行符的区别" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      git学习笔记
+      windows下和linux下回车换行符的区别
     </h1>
   
 
         
-        <a href="/2019/03/11/git学习笔记/" class="archive-article-date">
-  	<time datetime="2019-03-11T09:37:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-11</time>
+        <a href="/2019/04/26/windows下和linux下回车换行符的区别/" class="archive-article-date">
+  	<time datetime="2019-04-26T12:00:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-26</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="初始化本地库"><a href="#初始化本地库" class="headerlink" title="初始化本地库"></a>初始化本地库</h1><p>进入项目文件夹<br>使用<code>git init</code>命令初始化本地库，会在该文件夹生成隐藏子文件夹<code>.git</code>,该文件夹不要删除也不要随意修改。</p>
-<hr>
-<h1 id="设置签名"><a href="#设置签名" class="headerlink" title="设置签名"></a>设置签名</h1><h2 id="项目级别-仓库级别：仅在当前项目本地库有效"><a href="#项目级别-仓库级别：仅在当前项目本地库有效" class="headerlink" title="项目级别/仓库级别：仅在当前项目本地库有效"></a>项目级别/仓库级别：仅在当前项目本地库有效</h2><pre><code>使用`git config user.name xxx`
-使用`git config user.email xxx@xxx.com`
-</code></pre><h2 id="系统用户级别：登录当前操作系统的用户范围"><a href="#系统用户级别：登录当前操作系统的用户范围" class="headerlink" title="系统用户级别：登录当前操作系统的用户范围"></a>系统用户级别：登录当前操作系统的用户范围</h2><pre><code>使用`git config --global user.name xxx`
-使用`git config --global user.email xxx@xxx.com`
-</code></pre><h2 id="级别优先度："><a href="#级别优先度：" class="headerlink" title="级别优先度："></a>级别优先度：</h2><pre><code>两个都配置的话，先使用项目级别
-两个都未配置无法使用
-</code></pre><hr>
-<h1 id="状态查看及转换操作"><a href="#状态查看及转换操作" class="headerlink" title="状态查看及转换操作"></a>状态查看及转换操作</h1><p>使用<code>git status</code>查看工作区，暂存区状态<br>使用<code>git add filenamne</code>将工作区文件添加到暂存区<br>使用<code>git commit filename</code>将暂存区文件提交到本地库<br>使用<code>git commit -m &quot;xxx&quot; filename</code>添加注释信息 </p>
-<hr>
-<h1 id="版本查看"><a href="#版本查看" class="headerlink" title="版本查看"></a>版本查看</h1><p>使用<code>git log</code><br>使用<code>git log --oneline</code><br>使用<code>git reflog</code></p>
-<hr>
-<h1 id="版本前进后退"><a href="#版本前进后退" class="headerlink" title="版本前进后退"></a>版本前进后退</h1><p>实质，更改<em>HEAD</em>指针指向</p>
-<h2 id="基于索引值前进后退"><a href="#基于索引值前进后退" class="headerlink" title="基于索引值前进后退"></a>基于索引值前进后退</h2><p>使用命令<code>git reset --hard 索引值</code>完成版本转换</p>
-<h2 id="使用-符号只能后退"><a href="#使用-符号只能后退" class="headerlink" title="使用^符号只能后退"></a>使用^符号只能后退</h2><p>使用命令<code>git reset --hard HEAD^</code>往后退一步<br>使用命令<code>git reset --hard HEAD^^</code>往后退两步</p>
-<hr>
-<h1 id="reset的三种参数：hard-soft-mixed"><a href="#reset的三种参数：hard-soft-mixed" class="headerlink" title="reset的三种参数：hard,soft,mixed"></a>reset的三种参数：hard,soft,mixed</h1><p>soft参数：仅仅在本地库移动HEAD指针<br>mixed参数：在本地库移动HEAD指针，重置暂存区<br>hard参数：在本地库移动HEAD指针，重置暂存区，重置工作区</p>
-<hr>
-<h1 id="分支操作"><a href="#分支操作" class="headerlink" title="分支操作"></a>分支操作</h1><h2 id="创建及切换分支"><a href="#创建及切换分支" class="headerlink" title="创建及切换分支"></a>创建及切换分支</h2><p>初次创建一般为master分支，使用<code>git status</code>命令可以查看当前分支<br>使用<code>git branch -v</code>可以查看所有分支<br>使用<code>git branch 分支名</code>可以创建新分支<br>使用<code>git checkout 分支名</code>可以切换分支</p>
-<h2 id="分支合并"><a href="#分支合并" class="headerlink" title="分支合并"></a>分支合并</h2><p>第一步：切换到接受修改的分支(所要被增加新内容)上，使用<code>git checkout 被合并的分支名</code>命令<br>第二部：执行merge命令，使用<code>git merge 有新内容的分支名</code>命令，此处分支名为</p>
-<hr>
-<h1 id="远程库-代码托管中心"><a href="#远程库-代码托管中心" class="headerlink" title="远程库(代码托管中心)"></a>远程库(代码托管中心)</h1><h2 id="创建远程库"><a href="#创建远程库" class="headerlink" title="创建远程库"></a>创建远程库</h2><p>GitHub，码云……<br>在GitHub上创建新仓库后，会给出http地址和ssh地址</p>
-<h2 id="在本地创建远程库地址别名"><a href="#在本地创建远程库地址别名" class="headerlink" title="在本地创建远程库地址别名"></a>在本地创建远程库地址别名</h2><p>使用<code>git remote -v</code>查看当前已存远程库别名<br>使用<code>git remote add 别名 http地址</code>给远程库地址创建别名</p>
-<h2 id="将分支推送到远程库"><a href="#将分支推送到远程库" class="headerlink" title="将分支推送到远程库"></a>将分支推送到远程库</h2><p>使用<code>git push 远程库别名 分支名</code>将所选分支推送到远程库</p>
-<h2 id="将分支克隆到本地"><a href="#将分支克隆到本地" class="headerlink" title="将分支克隆到本地"></a>将分支克隆到本地</h2><p>使用<code>git clone 远程库地址</code>将远程库分支克隆到本地<br>该操作有三个作用：</p>
-<ul>
-<li>完整的把远程库下载到本地</li>
-<li>创建远程地址别名</li>
-<li>初始化本地库</li>
-</ul>
-<h2 id="远程库修改的拉取"><a href="#远程库修改的拉取" class="headerlink" title="远程库修改的拉取"></a>远程库修改的拉取</h2><p>使用<code>git fetch 远程库别名 分支名</code>将远程库拉取到本地<br>使用<code>git merge 远程库别名/分支名</code>将远程库与本地库合并<br>分开操作便于抓取后先审核文件，再选择是否合并</p>
-<p>使用<code>git pull 远程库别名 分支名</code>同时完成上述两步操作<br>这种操作适于确定文件无误，直接合并</p>
+        <p>在Linux下和Windows下新建一个文本文件，注意只是新建，并不向文件中写入数据，此时两个文件是一样的。此时的文件(不管是何处新建的)放在Windows下和Linux下都是一样的。</p>
+<p>但是一旦修改则不一样。在Linux下修改并保存，则换行是 \n ，在Windows下修改并保存，则换行是 \r \n 。</p>
+<p>并且，一旦修改并保存，则该文件的换行是 \n 还是 \r \n 都是不会变了，除非人为的修改，只是修改保存其中的内容，换行的内容是不会变的。</p>
+<p>用二进制方式时是\r\n，用文本方式时是\n<br>也就是说windows下打开文件流，判断是否是换行符时，只用判断是否是\n，而不是判断\r\n</p>
 
       
 
@@ -286,7 +257,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/03/11/git学习笔记/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/26/windows下和linux下回车换行符的区别/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -300,18 +271,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/04/26/windows下和linux下回车换行符的区别/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          windows下和linux下回车换行符的区别
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/03/11/Hexo-常用命令/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hexo 常用命令</div>
+    <a href="/2019/03/11/git学习笔记/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">git学习笔记</div>
       <i class="icon-circle-right"></i>
     </a>
   

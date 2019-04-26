@@ -152,6 +152,72 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-windows下和linux下回车换行符的区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/26/windows下和linux下回车换行符的区别/">windows下和linux下回车换行符的区别</a>
+    </h1>
+  
+
+        
+        <a href="/2019/04/26/windows下和linux下回车换行符的区别/" class="archive-article-date">
+  	<time datetime="2019-04-26T12:00:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在Linux下和Windows下新建一个文本文件，注意只是新建，并不向文件中写入数据，此时两个文件是一样的。此时的文件(不管是何处新建的)放在Windows下和Linux下都是一样的。</p>
+<p>但是一旦修改则不一样。在Linux下修改并保存，则换行是 \n ，在Windows下修改并保存，则换行是 \r \n 。</p>
+<p>并且，一旦修改并保存，则该文件的换行是 \n 还是 \r \n 都是不会变了，除非人为的修改，只是修改保存其中的内容，换行的内容是不会变的。</p>
+<p>用二进制方式时是\r\n，用文本方式时是\n<br>也就是说windows下打开文件流，判断是否是换行符时，只用判断是否是\n，而不是判断\r\n</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/04/26/windows下和linux下回车换行符的区别/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-git学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
