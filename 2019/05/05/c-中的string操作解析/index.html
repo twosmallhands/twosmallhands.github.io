@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>c++中的string操作解析 | 大哥，里边请！</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="#string的初始化123456string s1string s2(s1)string s2 = s1string s3(&amp;quot;value&amp;quot;)string s2 = &amp;quot;value&amp;quot;string s4(n,&amp;apos;c&amp;apos;)//把s4初始化成为由连续n个字符c组成的串 #string的基本操作12str.empty()//str为空返回truestr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="c++中的string操作解析">
+<meta property="og:url" content="http://yoursite.com/2019/05/05/c-中的string操作解析/index.html">
+<meta property="og:site_name" content="大哥，里边请！">
+<meta property="og:description" content="#string的初始化123456string s1string s2(s1)string s2 = s1string s3(&amp;quot;value&amp;quot;)string s2 = &amp;quot;value&amp;quot;string s4(n,&amp;apos;c&amp;apos;)//把s4初始化成为由连续n个字符c组成的串 #string的基本操作12str.empty()//str为空返回truestr">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-05-06T03:26:52.387Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="c++中的string操作解析">
+<meta name="twitter:description" content="#string的初始化123456string s1string s2(s1)string s2 = s1string s3(&amp;quot;value&amp;quot;)string s2 = &amp;quot;value&amp;quot;string s4(n,&amp;apos;c&amp;apos;)//把s4初始化成为由连续n个字符c组成的串 #string的基本操作12str.empty()//str为空返回truestr">
+  
+    <link rel="alternate" href="/atom.xml" title="大哥，里边请！" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">大哥，里边请！</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-c-中的string操作解析" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/05/c-中的string操作解析/" class="article-date">
+  <time datetime="2019-05-05T12:41:51.000Z" itemprop="datePublished">2019-05-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      c++中的string操作解析
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#string的初始化<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">string s1</span><br><span class="line">string s2(s1)</span><br><span class="line">string s2 = s1</span><br><span class="line">string s3(&quot;value&quot;)</span><br><span class="line">string s2 = &quot;value&quot;</span><br><span class="line">string s4(n,&apos;c&apos;)//把s4初始化成为由连续n个字符c组成的串</span><br></pre></td></tr></table></figure></p>
+<p>#string的基本操作<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.empty()//str为空返回true</span><br><span class="line">str.size()//返回str中字符的个数 类型为string::size_type(无符号整形数)</span><br></pre></td></tr></table></figure></p>
+<p>#string的修改</p>
+<p>##string中的+重载<br>每个加法运算符(+)的两侧的运算对象至少有一个是string<br>c++中的字符串字面值如”asdasd”并不是标准库类型string的对象，”asdasd”与string是不同类型</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">str=str1+str2//字符串与字符串拼接</span><br><span class="line">str=str1+&quot;asdfg&quot;</span><br><span class="line">str=str1+&apos;a&apos;//字符串与字符拼接</span><br><span class="line">str=str1+&quot;a&quot;//字符用单引号双引号等效</span><br></pre></td></tr></table></figure>
+<p>##string的插入<br>append()函数用来在字符串的末尾追加,返回string&amp;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">str.append(str1)</span><br><span class="line">str.append(str1,6,3)//追加str1[6]开始的3个字符,str[6]str[7]str[8]</span><br><span class="line">str.append(&quot;asdasd&quot;)</span><br><span class="line">str.append(12,&apos;a&apos;)//追加12个&apos;a&apos;</span><br></pre></td></tr></table></figure></p>
+<p>##string的赋值<br>assign()函数为先将原字符串清空，然后赋予新的值作替换,返回string&amp;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">str.assign(str1)</span><br><span class="line">str.assign(str1,6,3)//使用str1[6]开始的3个字符,str[6]str[7]str[8]，来为str赋值</span><br><span class="line">str.assign(&quot;asdasd&quot;)</span><br><span class="line">str.assign(10,&apos;a&apos;)</span><br><span class="line">str.assign(str1.begin()+1,base.end()-1)</span><br></pre></td></tr></table></figure></p>
+<p>##string的替换<br>replace()函数替换目标位置字符串，可以用insert()和erase()函数替代，但replace()函数简单<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">str.replace(6,3,str2)//删除从str[6]开始的3个字符,str[6]str[7]str[8],替换成为str2(注意:str2长度不一定为3)</span><br><span class="line">str.replace(6,3,str2,2,4)//删除从str[6]开始的3个字符,str[6]str[7]str[8],替换成为从str2[2]开始的4个字符</span><br><span class="line">str.replace(6,3,&quot;asdasd&quot;)</span><br><span class="line">str.replace(6,3,&quot;asdasd&quot;,3)//替换成为&quot;asdasd&quot;的前三个字符</span><br><span class="line">str.replace(str.begin()+1,str.end(),&quot;asdasd&quot;)//删除从str[1]开始，到str末尾的所有字符，替换成为&quot;asdasd&quot;</span><br></pre></td></tr></table></figure></p>
+<p>##string的插入<br>insert()函数用于在指定位置插入字符串<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">str.insert(6,str2)//在str[6]的位置插入str2</span><br><span class="line">str.insert(6,str2,3,4)//在str[6]的位置插入str2[3]开始的4个字符</span><br><span class="line">str.insert(10,&quot;asdasd&quot;)</span><br><span class="line">str.insert(10,&quot;asdasd&quot;,2)//在str[10]插入&quot;asdasd&quot;的前两个字符</span><br><span class="line">str.insert(2,5,&apos;a&apos;)//在str[2]插入5个&apos;a&apos;</span><br><span class="line">it = str.insert(str.begin()+5,&apos;,&apos;)//s.insert(s.it,ch)在*s的it指向位置前面*插入一个字符ch，返回新插入的位置的迭代器</span><br><span class="line">it = str.insert (str.end(),3,&apos;.&apos;)//在*s的it所指向位置的前面*插入n个ch，无法插入字符串</span><br></pre></td></tr></table></figure></p>
+<p>##string</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/05/c-中的string操作解析/" data-id="cjvc0stxb000300ujg8hq9y6g" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/04/26/windows下和linux下回车换行符的区别/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">windows下和linux下回车换行符的区别</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/05/05/c-中的string操作解析/">c++中的string操作解析</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/26/windows下和linux下回车换行符的区别/">windows下和linux下回车换行符的区别</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/11/git学习笔记/">git学习笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/11/Hexo-常用命令/">Hexo 常用命令</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/10/Markdown学习笔记/">Markdown学习笔记</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 two small hands<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
