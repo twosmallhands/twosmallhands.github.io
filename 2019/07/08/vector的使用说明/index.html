@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>vector的使用说明 | 大哥，里边请！</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="定义一个二维数组12vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; A(m,vector&amp;lt;int&amp;gt;(n, 0))//正确，定义一个m*n大小的数组，初始化为0。vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; A[m][n]//错误">
+  <meta name="description" content="定义一个二维数组1234vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; A(m,vector&amp;lt;int&amp;gt;(n))//正确，定义一个m*n大小的数组vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; A(m,vector&amp;lt;int&amp;gt;(n, 0))//正确，定义一个m*n大小的数组，初始化为0。使用上述两种方法可直接使用下标赋值，如：A[i][j]=1;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vector的使用说明">
 <meta property="og:url" content="http://yoursite.com/2019/07/08/vector的使用说明/index.html">
 <meta property="og:site_name" content="大哥，里边请！">
-<meta property="og:description" content="定义一个二维数组12vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; A(m,vector&amp;lt;int&amp;gt;(n, 0))//正确，定义一个m*n大小的数组，初始化为0。vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; A[m][n]//错误">
+<meta property="og:description" content="定义一个二维数组1234vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; A(m,vector&amp;lt;int&amp;gt;(n))//正确，定义一个m*n大小的数组vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; A(m,vector&amp;lt;int&amp;gt;(n, 0))//正确，定义一个m*n大小的数组，初始化为0。使用上述两种方法可直接使用下标赋值，如：A[i][j]=1;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-08T13:10:55.194Z">
+<meta property="og:updated_time" content="2019-07-08T13:14:13.529Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vector的使用说明">
-<meta name="twitter:description" content="定义一个二维数组12vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; A(m,vector&amp;lt;int&amp;gt;(n, 0))//正确，定义一个m*n大小的数组，初始化为0。vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; A[m][n]//错误">
+<meta name="twitter:description" content="定义一个二维数组1234vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; A(m,vector&amp;lt;int&amp;gt;(n))//正确，定义一个m*n大小的数组vector&amp;lt;vector&amp;lt;int&amp;gt;&amp;gt; A(m,vector&amp;lt;int&amp;gt;(n, 0))//正确，定义一个m*n大小的数组，初始化为0。使用上述两种方法可直接使用下标赋值，如：A[i][j]=1;">
   
     <link rel="alternative" href="/atom.xml" title="大哥，里边请！" type="application/atom+xml">
   
@@ -174,7 +174,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="定义一个二维数组"><a href="#定义一个二维数组" class="headerlink" title="定义一个二维数组"></a>定义一个二维数组</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;vector&lt;int&gt;&gt; A(m,vector&lt;int&gt;(n, 0))//正确，定义一个m*n大小的数组，初始化为0。</span><br><span class="line">vector&lt;vector&lt;int&gt;&gt; A[m][n]//错误</span><br></pre></td></tr></table></figure>
+        <h1 id="定义一个二维数组"><a href="#定义一个二维数组" class="headerlink" title="定义一个二维数组"></a>定义一个二维数组</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;vector&lt;int&gt;&gt; A(m,vector&lt;int&gt;(n))//正确，定义一个m*n大小的数组</span><br><span class="line">vector&lt;vector&lt;int&gt;&gt; A(m,vector&lt;int&gt;(n, 0))//正确，定义一个m*n大小的数组，初始化为0。</span><br><span class="line">使用上述两种方法可直接使用下标赋值，如：A[i][j]=1;</span><br><span class="line">vector&lt;vector&lt;int&gt;&gt; A[m][n]//错误</span><br></pre></td></tr></table></figure>
       
 
       
